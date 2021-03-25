@@ -1,0 +1,8 @@
+.idea
+*.iws
+*.iml
+*.ipr
+src/old/*.*
+
+# Project exclude paths
+/out/

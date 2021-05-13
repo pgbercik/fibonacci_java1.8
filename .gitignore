@@ -6,3 +6,4 @@ src/old/*.*
 
 # Project exclude paths
 /out/
+/target/

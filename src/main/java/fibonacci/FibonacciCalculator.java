@@ -1,3 +1,5 @@
+package main.java.fibonacci;
+
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +15,7 @@ public class FibonacciCalculator {
      * More details can be found in this link:
      * https://en.wikipedia.org/wiki/Fibonacci_number
      */
-    public BigInteger calculateFibonacci(int initNumber) {
+    public BigInteger calculateFibonacciWithList(int initNumber) {
 
         if (initNumber == 0) {
             result = result.add(new BigInteger("0"));
@@ -31,4 +33,8 @@ public class FibonacciCalculator {
 
         return result;
     }
+
+//    public BigInteger calculateFibonacciNoList(int initNumber) {
+//
+//    }
 }

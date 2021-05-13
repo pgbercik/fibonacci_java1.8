@@ -1,3 +1,5 @@
+package main.java.fibonacci;
+
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
@@ -10,10 +12,10 @@ public class RunFibonacci {
 
             //for results in scientific notation
             NumberFormat formatter = new DecimalFormat("0.####E0", DecimalFormatSymbols.getInstance(Locale.ROOT));
-            System.out.println("F(" + i + ")  wynik: " + formatter.format(f.calculateFibonacci(i)));
+            System.out.println("F(" + i + ")  wynik: " + formatter.format(f.calculateFibonacciWithList(i)));
 
             //for raw results
-//            System.out.println("F(" + i + ")  wynik: " + f.calculateFibonacci(i));
+//            System.out.println("F(" + i + ")  wynik: " + f.calculateFibonacciWithList(i));
 
         }
     }

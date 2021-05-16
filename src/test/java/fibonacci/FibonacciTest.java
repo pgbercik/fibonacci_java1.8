@@ -6,6 +6,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import java.math.BigInteger;
 import java.util.stream.Stream;
 
 public class FibonacciTest {
@@ -17,6 +18,14 @@ public class FibonacciTest {
     @MethodSource("testDataProvider")
     void testFibIterative(long number, long expectedResult) {
         Assertions.assertThat(FibonacciIterative.calcFibonacci(number)).isEqualTo(expectedResult);
+    }
+
+    @DisplayName("test iterative bigInt")
+    @ParameterizedTest()
+    //pairs of "input number,expectedResult"
+    @MethodSource("testDataProvider")
+    void testFibIterativeBigInt(long number, BigInteger expectedResult) {
+        Assertions.assertThat(FibonacciIterative.calcFibonacciBigInt(number)).isEqualTo(expectedResult);
     }
 
     @DisplayName("test recursive")
